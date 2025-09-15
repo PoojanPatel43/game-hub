@@ -16,7 +16,7 @@ interface Props {
   selectedGenre: Genre | null;
 }
 
-function GenreList({ onSelectGenre, selectedGenre }: Props) {
+function Genrelist({ onSelectGenre, selectedGenre }: Props) {
   const { data, isLoading, error } = useGenres();
 
   if (error) return null;
@@ -54,4 +54,4 @@ function GenreList({ onSelectGenre, selectedGenre }: Props) {
   );
 }
 
-export default GenreList;
+export default Genrelist;
